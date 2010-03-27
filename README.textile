@@ -27,6 +27,10 @@ Please note that the asterisk (*) at the end of the show name is included when t
 
 TBA = To Be Announced (when the upcoming episode information is not available).
 
-This app was written in Coldfusion (using the simple FW/1 framework) in a few hours and uses the excellent TVRage.com website. The SMS portion is handled by Twilio's ridiculously simple API (as they truthfully claim) and is quite cheap too (compared to the other solutions out there)É but that doesn't mean that you guys should exhaust my limited funds with this application. Please be gentle.
+This app was written in Coldfusion (using the simple FW/1 framework) in a few hours and uses the excellent TVRage.com website. The SMS portion is handled by Twilio's ridiculously simple API (as they truthfully claim) and is quite cheap too (compared to the other solutions out there)ï¿½ but that doesn't mean that you guys should exhaust my limited funds with this application. Please be gentle.
 
 If you have feedback, please leave a comment below or at "Hacker News":http://news.ycombinator.com/item?id=1126765
+
+The code that parses through the TVRage API is in utils/tv.cfc
+The code that is needed by Twilio is in layout/twilio.cfm + views/twilio/tv.cfm
+The rest of the structure code is related to Framework/1 (and while it is really not needed here, I was learning the framework)
