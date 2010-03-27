@@ -1,0 +1,32 @@
+h1. "SMS My Show (TV Show Information via SMS)":http://eapen.in/apps
+
+_Now with showtime + day_
+
+
+This application was quickly put together for Twilio's contest and is used to find out when your favorite TV show is on next.
+
+h6. To see how it works: 
+
+bq. Send an SMS to (650) 918-6928 with the name of a TV show (i.e. text "DEXTER" to 650.918.6928)
+
+p. or
+
+bq. Send an SMS to 41411 with TVSHOW followed by the name of the TV Show (i.e. text "TVSHOW DEXTER" to 41411)
+
+
+You will receive a reply with the number of days the next episode will be on (and the date) as well how many days ago the last episode was broadcast (and the date). 
+
+eg. Send an SMS to (650) 918-6928 with "Dexter" and you will get the following reply:
+Next episode of Dexter in 224 days at 21:00 EST Sun (9/25/10). Last episode was 62 days ago (12/31/09).
+
+For shows with long names, just send the first couple of words (or first few characters) where it will be unique enough to return the right result.
+eg. Send an SMS to (650) 918-6928 with "Little Mos" and you will get the following reply:
+Next episode of Little Mosque on the Prairie* is TBA. Last episode was 5 days ago (2/8/10).
+
+Please note that the asterisk (*) at the end of the show name is included when the show title is not an exact match with the show title requested. 
+
+TBA = To Be Announced (when the upcoming episode information is not available).
+
+This app was written in Coldfusion (using the simple FW/1 framework) in a few hours and uses the excellent TVRage.com website. The SMS portion is handled by Twilio's ridiculously simple API (as they truthfully claim) and is quite cheap too (compared to the other solutions out there)É but that doesn't mean that you guys should exhaust my limited funds with this application. Please be gentle.
+
+If you have feedback, please leave a comment below or at "Hacker News":http://news.ycombinator.com/item?id=1126765
